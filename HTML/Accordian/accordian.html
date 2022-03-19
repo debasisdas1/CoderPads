@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style>
+		.slide-01	{ 
+			background:#E8DAEF; 
+			color:black; 
+			}
+		.slide-02	{ 
+			background:#A9CCE3  ; 
+			color:black; 
+			}
+			
+		.slide-03	{ 
+			background:#D0ECE7 ; 
+			color:black; 
+			}	
+			
+		.accordian-horizontal {
+			overflow:hidden;
+			list-style:none;
+			margin-bottom: 10px;		
+		}
+		.accordian-horizontal li{
+			float:left;
+			width:33%;
+			overflow:hidden;
+			height:250px;
+			-moz-transition:width 0.5s ease-out;
+			-webkit-transition:width 0.5s ease-out;
+			-o-transition:width 0.5s ease-out;
+			transition:width 0.5s ease-out;
+		}
+		.accordian-horizontal li:first-of-type{
+			-moz-border-radius:10px 0 0 10px;
+			-webkit-border-radius:10px 0 0 10px;
+			-o-border-radius:10px 0 0 10px;
+			border-radius:10px 0 0 10px;
+		}
+		.accordian-horizontal li:last-of-type{
+			-moz-border-radius:0 10px 10px 0;
+			-webkit-border-radius:0 10px 10px 0;
+			-o-border-radius:0 10px 10px 0;
+			border-radius:0 10px 10px 0;
+		}
+		.accordian-horizontal div{
+			padding:10px;
+		}
+		.accordian-horizontal:hover li{
+			width:17%;
+		}
+		.accordian-horizontal li:hover{
+			width:66%;
+		}
+
+
+		.accordian-vertical {
+			width: 1080px;
+			height: 500px;
+			overflow:hidden;
+			list-style:none;
+			margin-bottom:10px;
+
+		}
+		.accordian-vertical li{
+			float:left;
+			width:1060px;
+			height:20%;
+			padding-left:10px;
+			-moz-transition:height: 0.5s ease-out;
+			-webkit-transition:height 0.5s ease-out;
+			-o-transition:height 0.5s ease-out;
+			transition:height 0.5s ease-out;
+		}
+		.accordian-vertical li:first-of-type{
+			-moz-border-radius:10px 10px 0 0;
+			-webkit-border-radius:10px 10px 0 0;
+			-o-border-radius:10px 10px 0 0;
+			border-radius:10px 10px 0 0;
+		}
+		.accordian-vertical li:last-of-type{
+			-moz-border-radius:0 0 10px 10px;
+			-webkit-border-radius:0 0 10px 10px;
+			-o-border-radius:0 0 10px 10px;
+			border-radius:0 0 10px 10px;
+		}
+		.accordian-vertical:hover li{
+			width:98%;
+			height:10%;
+		}
+		.accordian-vertical li:hover{
+			width:98%;
+			height: 60%;
+		}
+
+		</style>
+	</head>
+	<body>
+		<ul class = "accordian-horizontal" >
+			<li class = "slide-01">
+				<div>
+					<h2>Item 1</h2>
+					<p> Some text goes here</p>
+				</div>
+			</li>
+			<li class = "slide-02">
+				<div>
+					<h2>Item 2</h2>
+					<p> Some text goes here</p>
+				</div>
+			</li>
+			<li class = "slide-03">
+				<div>
+					<h2>Item 3</h2>
+					<p> Some text goes here</p>
+				</div>
+			</li>
+		</ul>
+
+		<ul class = "accordian-vertical" >
+			<li class = "slide-01">
+				<div>
+					<h2>Item 1</h2>
+					<p> Some text goes here</p>
+				</div>
+			</li>
+			<li class = "slide-02">
+				<div>
+					<h2>Item 2</h2>
+					<p> Some text goes here</p>
+				</div>
+			</li>
+			<li class = "slide-03">
+				<div>
+					<h2>Item 3</h2>
+					<p> Some text goes here</p>
+				</div>
+			</li>
+		</ul>
+
+	</body>
+	
+</html>
